@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* or npm install typeface-roboto and in js import "typeface-roboto" */
+
+/* xl */
+@media only screen and (min-width: 1904px) {
+	:root {
+		--content-max-width: 800px;
+		--content-hr-margins: auto;
+	}
+}
+
+/* lg */
+@media only screen and (max-width: 1904px) {
+	:root {
+		--content-max-width: 800px;
+		--content-hr-margins: auto;
+	}
+}
+
+/* md */
+@media only screen and (max-width: 1264px) {
+	:root {
+		--content-max-width: 800px;
+		--content-hr-margins: auto;
+	}
+}
+
+/* sm */
+@media only screen and (max-width: 960px) {
+	:root {
+		--content-max-width: 100%;
+		--content-hr-margins: 0;
+	}
+}
+
+/* xs */
+@media only screen and (max-width: 600px) {
+	:root {
+		--content-max-width: 100%;
+		--content-hr-margins: 0;
+	}
+}
+
+.content {
+	max-width: var(--content-max-width);
+	margin-top: 20px;
+	margin-left: var(--content-hr-margins);
+	margin-right: var(--content-hr-margins);
+}
