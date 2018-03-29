@@ -213,36 +213,43 @@ class AddEditUser extends React.Component {
 				actions={actions}
 			>
 				<div>
-				<TextField
-					floatingLabelText="Imię"
-					value={this.state.user.firstName}
-					onChange={e => this.handleChange('firstName', e)}
-				/>
+					<TextField
+						floatingLabelText="Imię"
+						value={this.state.user.firstName}
+						onChange={e => this.handleChange('firstName', e)}
+					/>
 				</div>
 				<div>
-				<TextField
-					floatingLabelText="Nazwisko"
-					value={this.state.user.surname}
-					onChange={e => this.handleChange('surname', e)}
-				/>
+					<TextField
+						floatingLabelText="Nazwisko"
+						value={this.state.user.surname}
+						onChange={e => this.handleChange('surname', e)}
+					/>
 				</div>
 				<div>
-				<TextField
-					floatingLabelText="Miasto"
-					value={this.state.user.city}
-					onChange={(e) => this.handleChange('city', e)}
-				/>
+					<TextField
+						floatingLabelText="Miasto"
+						value={this.state.user.city}
+						onChange={(e) => this.handleChange('city', e)}
+					/>
 				</div>
 				<div>
-				<SelectField
-					floatingLabelText="Płeć"
-					value={this.state.user.sex}
-					onChange={(e, i, v) => this.handleChange('sex', v)}
-				>
-					<MenuItem value={SEX.f} primaryText={SEX.f} />
-					<MenuItem value={SEX.m} primaryText={SEX.m} />
-					<MenuItem value={SEX.o} primaryText={SEX.o} />
-				</SelectField>
+					<TextField
+						floatingLabelText="Kod kraju"
+						value={this.state.user.country}
+						onChange={(e) => this.handleChange('country', e)}
+					/>
+				</div>
+				<div>
+					<SelectField
+						floatingLabelText="Płeć"
+						value={this.state.user.sex}
+						onChange={(e, i, v) => this.handleChange('sex', v)}
+					>
+						<MenuItem value={SEX.f} primaryText={SEX.f} />
+						<MenuItem value={SEX.m} primaryText={SEX.m} />
+						<MenuItem value={SEX.o} primaryText={SEX.o} />
+					</SelectField>
 				</div>
 			</Dialog>
 		)
